@@ -7,7 +7,7 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background: rgb(5, 5, 34);
   padding: 0 16px;
 }
 
@@ -133,4 +133,7 @@ ul {
     width: 100%;
     margin-right: 0;
   }
+
+  
+    
 }

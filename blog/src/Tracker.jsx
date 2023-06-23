@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import "./css/material-dashboard.css";
+import "./css/material-dashboard.min.css";
+import "./css/Material+Icons.css";
 import axios from 'axios';
 
 const TaskTrackerApp = () => {
@@ -55,13 +58,13 @@ const TaskTrackerApp = () => {
   };
 
   return (
-    <div className="dark-edition">
+    <div className="dark-edition" style={{background: "rgb(5, 5, 34)"}}>
       <div className="main-panel">
         <div className="content">
           <Container>
             <Row>
               <Col lg={8} md={12} xs={12}>
-                <div className="card" style={{marginTop: "150px", marginLeft: "200px", marginRight: "50px"}}>
+                <div className="card">
                   <div className="card-header card-header-primary">
                     <h4 className="card-title text-center"><b>Task Tracker</b></h4>
                   </div>
@@ -100,13 +103,14 @@ const TaskTrackerApp = () => {
                         <tbody>
                           {tasks.map((task) => (
                             <tr key={task._id}>
-                              <td>{task.title}</td>
+                              <td><li style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>{task.title}</li></td>
                               <td>
                                 <Button
                                   variant="info"
                                   className="btn-link btn-sm"
                                   data-original-title={task.completed ? 'Mark Incomplete' : 'Mark Complete'}
                                   onClick={() => completeTask(task._id)}
+                                  
                                 >
                                   <i className="material-icons">{task.completed ? 'done' : 'check'}</i>
                                   <div className="ripple-container" />
@@ -116,6 +120,7 @@ const TaskTrackerApp = () => {
                                   className="btn-link btn-sm"
                                   data-original-title="Delete"
                                   onClick={() => deleteTask(task._id)}
+                                  
                                 >
                                   <i className="material-icons">delete</i>
                                   <div className="ripple-container" />
