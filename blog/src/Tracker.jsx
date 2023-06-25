@@ -66,7 +66,7 @@ const TaskTrackerApp = () => {
               <Col lg={8} md={12} xs={12}>
                 <div className="card">
                   <div className="card-header card-header-primary">
-                    <h4 className="card-title text-center"><b>Task Tracker</b></h4>
+                    <h4 className="card-title text-center"><b>Task Management System</b></h4>
                   </div>
                   <div className="card-body">
                     <div className="table-responsive ps">
