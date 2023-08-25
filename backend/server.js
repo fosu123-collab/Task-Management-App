@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,7 +9,7 @@ app.use(cors());
 
 // Connect to MongoDB
 mongoose.set('strictQuery', true)
-mongoose.connect('mongodb://127.0.0.1:27017/taskAppDB', {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
