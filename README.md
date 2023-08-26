@@ -1,6 +1,6 @@
 # Task-Management-App
 
-![task2](https://github.com/jones566/Task-Management-App/assets/98017612/547f3a07-ce1b-47fc-8c8a-73e856d6326d)
+![task](https://github.com/jones566/Task-Management-App/assets/98017612/8f22fb01-c190-4912-8e7e-a731518ae35d)
 
 # Description
 * This is a task management application.
