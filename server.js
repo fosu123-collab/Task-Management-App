@@ -10,7 +10,7 @@ app.use(cors());
 
 // Connect to MongoDB
 mongoose.set('strictQuery', true)
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("MONGO_URI=mongodb+srv://admin-Jones:Malachi456.@atlascluster.gps7jki.mongodb.net/ecommerceDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
